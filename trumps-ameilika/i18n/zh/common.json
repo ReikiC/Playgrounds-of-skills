@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "首页",
+    "biography": "生平",
+    "policies": "政策",
+    "gallery": "画廊",
+    "about": "关于"
+  },
+  "home": {
+    "title": "唐纳德·J·特朗普总统",
+    "subtitle": "美利坚合众国第45任和第47任总统",
+    "welcome": "欢迎来到唐纳德·J·特朗普总统及其对美国愿景的官方致敬网站",
+    "cta": "探索他的传奇",
+    "searchPlaceholder": "搜索本站..."
+  },
+  "biography": {
+    "title": "生平事迹",
+    "subtitle": "一位有远见领袖的征程",
+    "earlyLife": "早年生活",
+    "earlyLifeContent": "唐纳德·约翰·特朗普于1946年6月14日出生在纽约市皇后区。他以经济学学位毕业于宾夕法尼亚大学沃顿商学院。",
+    "businessCareer": "商业生涯",
+    "businessCareerContent": "在进入政界之前，特朗普作为房地产开发商和商人建立了一个著名的商业帝国。他在纽约市内外开发了众多标志性物业。",
+    "politicalCareer": "政治生涯",
+    "politicalCareerContent": "特朗普的政治征程在2016年达到顶峰，当选为美国第45任总统，并于2024年再次当选为第47任总统，使他成为第二位非连续任期的总统。"
+  },
+  "policies": {
+    "title": "政策与愿景",
+    "subtitle": "让美国再次伟大",
+    "economy": {
+      "title": "经济增长",
+      "content": "减税、放松管制和亲商政策推动了前所未有的经济增长和就业创造。"
+    },
+    "immigration": {
+      "title": "移民改革",
+      "content": "确保边境安全，改革移民体系，优先考虑美国公民。"
+    },
+    "foreignPolicy": {
+      "title": "美国优先外交政策",
+      "content": "在对外关系中把美国利益放在首位，通过实力促进和平。"
+    },
+    "trade": {
+      "title": "公平贸易",
+      "content": "重新谈判贸易协定，为美国工人和企业确保公平条款。"
+    }
+  },
+  "gallery": {
+    "title": "图片画廊",
+    "subtitle": "历史时刻"
+  },
+  "about": {
+    "title": "关于本站",
+    "subtitle": "颂扬美国领导力",
+    "content": "本网站致力于致敬唐纳德·J·特朗普总统的遗产和愿景以及他对美国人民的承诺。在这里，我们庆祝塑造了这个国家的成就和政策。"
+  },
+  "theme": {
+    "toggle": "切换主题",
+    "light": "浅色",
+    "dark": "深色"
+  },
+  "language": {
+    "switch": "切换到英文",
+    "en": "English",
+    "zh": "中文"
+  },
+  "search": {
+    "title": "搜索结果",
+    "noResults": "没有找到相关结果",
+    "results": "的搜索结果",
+    "placeholder": "搜索..."
+  }
+}

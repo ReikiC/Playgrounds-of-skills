@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "biography": "Biography",
+    "policies": "Policies",
+    "gallery": "Gallery",
+    "about": "About"
+  },
+  "home": {
+    "title": "President Donald J. Trump",
+    "subtitle": "The 45th and 47th President of the United States",
+    "welcome": "Welcome to the official tribute to President Donald J. Trump and his vision for America",
+    "cta": "Explore His Legacy",
+    "searchPlaceholder": "Search the site..."
+  },
+  "biography": {
+    "title": "Biography",
+    "subtitle": "The Journey of a Visionary Leader",
+    "earlyLife": "Early Life",
+    "earlyLifeContent": "Donald John Trump was born on June 14, 1946, in Queens, New York City. He graduated from the Wharton School of the University of Pennsylvania with a degree in economics.",
+    "businessCareer": "Business Career",
+    "businessCareerContent": "Before entering politics, Trump built a renowned business empire as a real estate developer and businessman. He developed numerous iconic properties across New York City and beyond.",
+    "politicalCareer": "Political Career",
+    "politicalCareerContent": "Trump's political journey culminated in his election as the 45th President of the United States in 2016, and again as the 47th President in 2024, making him the second president to serve non-consecutive terms."
+  },
+  "policies": {
+    "title": "Policies & Vision",
+    "subtitle": "Making America Great Again",
+    "economy": {
+      "title": "Economic Growth",
+      "content": "Tax cuts, deregulation, and pro-business policies that drove unprecedented economic growth and job creation."
+    },
+    "immigration": {
+      "title": "Immigration Reform",
+      "content": "Securing borders, reforming immigration systems, and prioritizing American citizens."
+    },
+    "foreignPolicy": {
+      "title": "America First Foreign Policy",
+      "content": "Putting American interests first in international relations while promoting peace through strength."
+    },
+    "trade": {
+      "title": "Fair Trade",
+      "content": "Renegotiating trade deals to ensure fair terms for American workers and businesses."
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Moments in History"
+  },
+  "about": {
+    "title": "About This Site",
+    "subtitle": "Celebrating American Leadership",
+    "content": "This website is dedicated to honoring the legacy and vision of President Donald J. Trump and his commitment to the American people. Here, we celebrate the achievements and policies that have shaped the nation."
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "switch": "Switch to Chinese",
+    "en": "English",
+    "zh": "中文"
+  },
+  "search": {
+    "title": "Search Results",
+    "noResults": "No results found for",
+    "results": "results for",
+    "placeholder": "Search..."
+  }
+}
