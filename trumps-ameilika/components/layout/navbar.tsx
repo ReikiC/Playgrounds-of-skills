@@ -12,6 +12,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [showSearch, setShowSearch] = React.useState(false);
   const [searchQuery, setSearchQuery] = React.useState('');
+  const [mounted, setMounted] = React.useState(false);
   const t = useTranslations('nav');
   const tHome = useTranslations('home');
   const tTheme = useTranslations('theme');
@@ -20,6 +21,11 @@ export function Navbar() {
   const pathname = usePathname();
   const locale = useLocale();
   const searchParams = useSearchParams();
+
+  // useEffect only runs on the client, so we can safely set mounted
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navLinks = [
     { href: `/${locale}`, label: t('home') },
@@ -93,7 +99,14 @@ export function Navbar() {
               className="p-2 rounded-md hover:bg-accent transition-colors"
               aria-label={tTheme('toggle')}
             >
-              {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+              {mounted && theme === 'light' ? (
+                <Moon className="h-5 w-5" />
+              ) : mounted && theme === 'dark' ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                // Placeholder to prevent layout shift during SSR
+                <div className="h-5 w-5" />
+              )}
             </button>
 
             {/* Mobile Menu Button */}
