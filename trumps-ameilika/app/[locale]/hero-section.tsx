@@ -8,8 +8,8 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-red-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900" />
-      <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-red-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-950 transition-colors duration-300" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-10" />
 
       <div className="relative container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -34,7 +34,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <a
               href="#features"
-              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-red-600 px-8 py-3 text-base font-semibold text-white shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-red-600 px-8 py-3 text-base font-semibold text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
             >
               {t('cta')}
             </a>

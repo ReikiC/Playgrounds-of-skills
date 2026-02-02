@@ -49,7 +49,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -99,13 +99,14 @@ export function Navbar() {
               className="p-2 rounded-md hover:bg-accent transition-colors"
               aria-label={tTheme('toggle')}
             >
-              {mounted && theme === 'light' ? (
+              {!mounted ? (
+                <Sun className="h-5 w-5 opacity-50" />
+              ) : theme === 'light' ? (
                 <Moon className="h-5 w-5" />
-              ) : mounted && theme === 'dark' ? (
+              ) : theme === 'dark' ? (
                 <Sun className="h-5 w-5" />
               ) : (
-                // Placeholder to prevent layout shift during SSR
-                <div className="h-5 w-5" />
+                <Sun className="h-5 w-5" />
               )}
             </button>
 

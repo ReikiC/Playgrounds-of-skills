@@ -1,6 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { ThemeProvider } from '@/components/providers/theme-provider';
 import { Navbar } from '@/components/layout/navbar';
 import { locales, type Locale } from '@/i18n/request';
 
@@ -23,18 +22,16 @@ export default async function LocaleLayout({
   const messages = await getMessages({ locale });
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-      <NextIntlClientProvider messages={messages}>
-        <div className="flex flex-col min-h-screen">
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <footer className="border-t py-8 mt-12">
-            <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-              <p>&copy; {CURRENT_YEAR} President Donald J. Trump Tribute. All rights reserved.</p>
-            </div>
-          </footer>
-        </div>
-      </NextIntlClientProvider>
-    </ThemeProvider>
+    <NextIntlClientProvider messages={messages}>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <footer className="border-t py-8 mt-12">
+          <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
+            <p>&copy; {CURRENT_YEAR} President Donald J. Trump Tribute. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </NextIntlClientProvider>
   );
 }

@@ -33,7 +33,7 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-24 bg-background">
+    <section id="features" className="py-24 bg-background transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Explore</h2>
@@ -47,9 +47,9 @@ export function FeaturesSection() {
             <a
               key={feature.href}
               href={feature.href}
-              className="group relative overflow-hidden rounded-lg border bg-card p-6 hover:shadow-lg transition-all hover:scale-105"
+              className="group relative overflow-hidden rounded-lg border bg-card p-6 hover:shadow-lg hover:shadow-xl/10 hover:scale-105 transition-all duration-200"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-200`} />
               <div className="relative">
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
